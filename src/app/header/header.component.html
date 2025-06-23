@@ -1,1 +1,28 @@
-<h1>Header Component</h1>
+ <nav class="bg-blue-600 text-white p-4 shadow-lg">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            
+            <!-- Logo -->
+            <div>
+                <a href="#" class="text-2xl font-bold hover:text-yellow-300">Recipe Book</a>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-lg">
+                <a href="#" class="hover:text-yellow-300">Recipes</a>
+                <a href="#" class="hover:text-yellow-300">Shopping List</a>
+
+                <!-- Dropdown -->
+                <div class="relative group">
+                    <button class="hover:text-yellow-300 flex items-center">
+                        Manage ▼
+                    </button>
+
+                    <!-- Dropdown Menu -->
+                    <div class="absolute hidden group-hover:block bg-white text-black rounded shadow-lg mt-2 w-32">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Data</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Fetch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
